@@ -9,6 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.5.4"
+    "@types/three": "^0.174.0",
+    "astro": "^5.5.4",
+    "load-bmfont": "^1.4.2",
+    "three": "^0.174.0",
+    "three-bmfont-text": "^3.0.1"
   }
 }
