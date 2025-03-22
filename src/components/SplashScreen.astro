@@ -1,0 +1,65 @@
+<div class="splash-container" id="splashScreen">
+  <div class="splash-message">¡Te mereces esto y más mi vida!</div>
+</div>
+
+<style>
+  .splash-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fd70e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+  }
+
+  .splash-message {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    color: #ffffff;
+    animation: pulse 3s normal;
+    padding: 5px;
+  }
+
+  @keyframes pulse {
+    0% {
+        opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+        opacity: 0.5;
+      transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
+
+<script>
+  // Función para mostrar el contenido principal y ocultar el splash screen
+  function showMainContent() {
+    const splashScreen = document.getElementById("splashScreen");
+    const mainContent = document.getElementById("mainContent");
+
+    // Primero hacemos desvanecer el splash screen
+    if (splashScreen) splashScreen.style.opacity = "0";
+
+    // Después mostramos el contenido
+    setTimeout(() => {
+      if (splashScreen) splashScreen.style.display = "none";
+      if (mainContent) mainContent.style.opacity = "1";
+    }, 500);
+  }
+
+  // Configurar temporizador (3 segundos)
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(showMainContent, 3000);
+  });
+</script>
