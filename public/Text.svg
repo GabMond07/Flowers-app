@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  
+  <!-- Corazón decorativo -->
+  <path d="M50,80 C50,50 80,20 110,50 C140,20 170,50 170,80 C170,120 110,150 110,150 C110,150 50,120 50,80 Z" fill="#ff6bce" opacity="0.8"/>
+  
+  <!-- Texto cursivo principal -->
+  <text x="200" y="120" font-family="Brush Script MT, cursive" font-size="54" text-anchor="middle" fill="#ffffff">
+    Te amo mi amor
+  </text>
+  
+  <!-- Decoración sutil -->
+  <path d="M30,180 C100,160 300,160 370,180" stroke="#ff00d4" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+</svg>
